@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "59cbf46d-280c-4892-af5b-9aaeb05110cf",
+		"name": "people-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25551523"
+	},
+	"item": [
+		{
+			"name": "get-list-of-people-api",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "register-people-api",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "login-people-api",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "verify-token-api",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create-complain-api",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJiYW5zaSIsInBhc3N3b3JkIjoiMGQ3MjAyNWZlZTgyZjhlN2FiZTU5ZGVmNDJhY2M4NmEiLCJlbWFpbCI6ImJhbnNpQGdtYWlsLmNvbSIsImRvYiI6IjIzLTEyLTIwMDEiLCJwaG9uZSI6IjkwMDAyIDgwMDAyIiwibmF0aW9uYWxpdHkiOiJVQUUiLCJjcmVhdGVkQXQiOiIyMDIzLTAyLTIzVDEwOjU1OjUwLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIzLTAyLTIzVDEwOjU1OjUwLjAwMFoifQ.vZ30tWk2C4jL6kY9glst8Y0urBQycMshZ1PppWxCH5U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"matter\": \"login issue\",\r\n    \"complain\" : \"unable to login\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5005/app/complain",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"app",
+						"complain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-complain-api",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "list- all-complain-api",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
