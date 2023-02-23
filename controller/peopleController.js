@@ -78,7 +78,10 @@ exports.login = async function (req, res) {
     try {
         const login = await db.peoples.findOne({ where: { username: req.body.username, password: md5(req.body.password) } })
         if (!login) {
-            console.log("user not found");
+            return res.json({
+                status: 'error',
+                message: 'Username or password is incorrect'
+            })
         } else {
             return res.json({
                 status: 'success',
